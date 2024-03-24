@@ -13,7 +13,7 @@ DOMAIN = 'samialhamad.com'
 ​
 # Authenticate with the Google Workspace API using the service account key
 credentials = service_account.Credentials.from_service_account_file(
-    SERVICE_ACCOUNT_FILE, scopes=['https://www.googleapis.com/auth/admin.directory.user'], subject='root@samialhamad.com')
+    SERVICE_ACCOUNT_FILE, scopes=['https://www.googleapis.com/auth/admin.directory.user'], subject='')
 service = build('admin', API_VERSION, credentials=credentials)
 ​
 # Set the path to your CSV file
